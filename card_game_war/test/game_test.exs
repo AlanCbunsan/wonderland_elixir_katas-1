@@ -1,6 +1,8 @@
 defmodule CardGameWar.GameTest do
   use ExUnit.Case
+  alias CardGameWar.Game
 
+  
   test "the highest rank wins the cards in the round" do
     assert {Winner, :J2} ==
     CardGameWar.Game.war([{:spade, 4}],[{:spade, 9}],1)
