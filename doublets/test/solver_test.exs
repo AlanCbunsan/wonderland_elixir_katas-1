@@ -16,6 +16,7 @@ defmodule Doublets.SolverTest do
            doublets("wheat", "bread")
   end
 
+
   test "with no word links found" do
     assert [] == doublets("ye", "freezer")
   end
